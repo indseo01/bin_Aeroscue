@@ -1,0 +1,252 @@
+ndseo01@jetson:~/aeroscue_models$ python3 benchmarkh.py
+Loading PyTorch model...
+Loading TensorRT model...
+
+Benchmarking PyTorch...
+
+Benchmarking TensorRT...
+Loading yolov8_human.engine for TensorRT inference...
+[09/22/2026-15:43:16] [TRT] [I] Loaded engine size: 7 MiB
+[09/22/2026-15:43:17] [TRT] [W] Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
+[09/22/2026-15:43:17] [TRT] [I] [MemUsageChange] Init cuDNN: CPU +0, GPU +0, now: CPU 1845, GPU 5186 (MiB)
+[09/22/2026-15:43:17] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +5, now: CPU 0, GPU 5 (MiB)
+[09/22/2026-15:43:17] [TRT] [I] [MemUsageChange] Init cuDNN: CPU +1, GPU +0, now: CPU 1838, GPU 5189 (MiB)
+[09/22/2026-15:43:17] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +10, now: CPU 0, GPU 15 (MiB)
+
+==============================
+       BENCHMARK RESULT
+==============================
+PyTorch :  43.0 ms
+TensorRT:  41.6 ms
+PyTorch FPS:     23.27
+TensorRT FPS:     24.02
+TensorRT average: 41.6 ms
+PyTorch average: 43.0 ms
+Speedup  :  1.03x
+==============================
+indseo01@jetson:~/aeroscue_models$ python3 benchmarkh.py
+Loading PyTorch model...
+Loading TensorRT model...
+
+Benchmarking PyTorch...
+    
+Benchmarking TensorRT...
+Loading yolov8_human.engine for TensorRT inference...
+[09/22/2026-15:44:43] [TRT] [I] Loaded engine size: 7 MiB
+[09/22/2026-15:44:43] [TRT] [W] Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
+[09/22/2026-15:44:43] [TRT] [I] [MemUsageChange] Init cuDNN: CPU +0, GPU +7, now: CPU 1845, GPU 5164 (MiB)
+[09/22/2026-15:44:43] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +5, now: CPU 0, GPU 5 (MiB)
+[09/22/2026-15:44:43] [TRT] [I] [MemUsageChange] Init cuDNN: CPU +1, GPU +11, now: CPU 1838, GPU 5175 (MiB)
+[09/22/2026-15:44:43] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +10, now: CPU 0, GPU 15 (MiB)
+
+==============================
+       BENCHMARK RESULT
+==============================
+PyTorch :  39.5 ms
+TensorRT:  30.1 ms
+PyTorch FPS:     25.30
+TensorRT FPS:     33.25
+TensorRT average: 30.1 ms
+PyTorch average: 39.5 ms
+Speedup  :  1.31x
+==============================
+indseo01@jetson:~/aeroscue_models$ python3 benchmarkh.py
+Loading PyTorch model...
+Loading TensorRT model...
+
+Benchmarking PyTorch...
+
+Benchmarking TensorRT...
+Loading yolov8_human.engine for TensorRT inference...
+[09/22/2026-15:45:05] [TRT] [I] Loaded engine size: 7 MiB
+[09/22/2026-15:45:05] [TRT] [W] Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
+[09/22/2026-15:45:05] [TRT] [I] [MemUsageChange] Init cuDNN: CPU +0, GPU +4, now: CPU 1845, GPU 5214 (MiB)
+[09/22/2026-15:45:05] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +5, now: CPU 0, GPU 5 (MiB)
+[09/22/2026-15:45:05] [TRT] [I] [MemUsageChange] Init cuDNN: CPU +1, GPU +5, now: CPU 1838, GPU 5214 (MiB)
+[09/22/2026-15:45:05] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +10, now: CPU 0, GPU 15 (MiB)
+
+==============================
+       BENCHMARK RESULT
+==============================
+PyTorch :  43.1 ms
+TensorRT:  29.8 ms
+PyTorch FPS:     23.20
+TensorRT FPS:     33.58
+TensorRT average: 29.8 ms
+PyTorch average: 43.1 ms
+Speedup  :  1.45x
+==============================
+indseo01@jetson:~/aeroscue_models$ python3 benchmarkh.py
+Loading PyTorch model...
+Loading TensorRT model...
+
+Benchmarking PyTorch...
+
+Benchmarking TensorRT...
+Loading yolov8_human.engine for TensorRT inference...
+[09/22/2026-15:45:22] [TRT] [I] Loaded engine size: 7 MiB
+[09/22/2026-15:45:22] [TRT] [W] Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
+[09/22/2026-15:45:22] [TRT] [I] [MemUsageChange] Init cuDNN: CPU +0, GPU +10, now: CPU 1845, GPU 5176 (MiB)
+[09/22/2026-15:45:22] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +5, now: CPU 0, GPU 5 (MiB)
+[09/22/2026-15:45:22] [TRT] [I] [MemUsageChange] Init cuDNN: CPU +1, GPU +5, now: CPU 1838, GPU 5182 (MiB)
+[09/22/2026-15:45:22] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +10, now: CPU 0, GPU 15 (MiB)
+
+==============================
+       BENCHMARK RESULT
+==============================
+PyTorch :  41.4 ms
+TensorRT:  30.3 ms
+PyTorch FPS:     24.15
+TensorRT FPS:     33.02
+TensorRT average: 30.3 ms
+PyTorch average: 41.4 ms
+Speedup  :  1.37x
+==============================
+indseo01@jetson:~/aeroscue_models$ python3 benchmarkh.py
+Loading PyTorch model...
+Loading TensorRT model...
+
+Benchmarking PyTorch...
+
+Benchmarking TensorRT...
+Loading yolov8_human.engine for TensorRT inference...
+[09/22/2026-15:45:37] [TRT] [I] Loaded engine size: 7 MiB
+[09/22/2026-15:45:37] [TRT] [W] Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
+[09/22/2026-15:45:37] [TRT] [I] [MemUsageChange] Init cuDNN: CPU +0, GPU +10, now: CPU 1845, GPU 5196 (MiB)
+[09/22/2026-15:45:37] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +5, now: CPU 0, GPU 5 (MiB)
+[09/22/2026-15:45:37] [TRT] [I] [MemUsageChange] Init cuDNN: CPU +1, GPU +7, now: CPU 1838, GPU 5203 (MiB)
+[09/22/2026-15:45:37] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +10, now: CPU 0, GPU 15 (MiB)
+
+==============================
+       BENCHMARK RESULT
+==============================
+PyTorch :  39.4 ms
+TensorRT:  30.0 ms
+PyTorch FPS:     25.37
+TensorRT FPS:     33.32
+TensorRT average: 30.0 ms
+PyTorch average: 39.4 ms
+Speedup  :  1.31x
+==============================
+indseo01@jetson:~/aeroscue_models$ python3 benchmarkh.py
+Loading PyTorch model...
+Loading TensorRT model...
+
+Benchmarking PyTorch...
+
+Benchmarking TensorRT...
+Loading yolov8_human.engine for TensorRT inference...
+[09/22/2026-15:45:53] [TRT] [I] Loaded engine size: 7 MiB
+[09/22/2026-15:45:53] [TRT] [W] Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
+[09/22/2026-15:45:53] [TRT] [I] [MemUsageChange] Init cuDNN: CPU +0, GPU +9, now: CPU 1845, GPU 5183 (MiB)
+[09/22/2026-15:45:53] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +5, now: CPU 0, GPU 5 (MiB)
+[09/22/2026-15:45:53] [TRT] [I] [MemUsageChange] Init cuDNN: CPU +1, GPU +6, now: CPU 1838, GPU 5189 (MiB)
+[09/22/2026-15:45:53] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +10, now: CPU 0, GPU 15 (MiB)
+
+==============================
+       BENCHMARK RESULT
+==============================
+PyTorch :  39.9 ms
+TensorRT:  30.5 ms
+PyTorch FPS:     25.04
+TensorRT FPS:     32.81
+TensorRT average: 30.5 ms
+PyTorch average: 39.9 ms
+Speedup  :  1.31x
+==============================
+indseo01@jetson:~/aeroscue_models$ python3 benchmarkf.py
+Loading yolov8_flood.engine for TensorRT inference...
+[09/22/2026-15:46:16] [TRT] [I] Loaded engine size: 7 MiB
+[09/22/2026-15:46:16] [TRT] [W] Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
+[09/22/2026-15:46:16] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +6, now: CPU 0, GPU 6 (MiB)
+[09/22/2026-15:46:16] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +9, now: CPU 0, GPU 15 (MiB)
+
+========== flood MODEL ==========
+PyTorch :  40.58 ms
+TensorRT:  28.57 ms
+PyTorch FPS :  24.64
+TensorRT FPS:  35.01
+TensorRT average: 28.6 ms
+PyTorch average: 40.6 ms
+Speedup: 1.42x
+=================================
+indseo01@jetson:~/aeroscue_models$ python3 benchmarkf.py
+Loading yolov8_flood.engine for TensorRT inference...
+[09/22/2026-15:46:51] [TRT] [I] Loaded engine size: 7 MiB
+[09/22/2026-15:46:51] [TRT] [W] Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
+[09/22/2026-15:46:51] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +6, now: CPU 0, GPU 6 (MiB)
+[09/22/2026-15:46:51] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +9, now: CPU 0, GPU 15 (MiB)
+
+========== flood MODEL ==========
+PyTorch :  40.37 ms
+TensorRT:  28.45 ms
+PyTorch FPS :  24.77
+TensorRT FPS:  35.15
+TensorRT average: 28.5 ms
+PyTorch average: 40.4 ms
+Speedup: 1.42x
+=================================
+indseo01@jetson:~/aeroscue_models$ python3 benchmarkf.py
+Loading yolov8_flood.engine for TensorRT inference...
+[09/22/2026-15:47:13] [TRT] [I] Loaded engine size: 7 MiB
+[09/22/2026-15:47:13] [TRT] [W] Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
+[09/22/2026-15:47:13] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +6, now: CPU 0, GPU 6 (MiB)
+[09/22/2026-15:47:13] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +9, now: CPU 0, GPU 15 (MiB)
+
+========== flood MODEL ==========
+PyTorch :  40.06 ms
+TensorRT:  28.39 ms
+PyTorch FPS :  24.96
+TensorRT FPS:  35.23
+TensorRT average: 28.4 ms
+PyTorch average: 40.1 ms
+Speedup: 1.41x
+=================================
+indseo01@jetson:~/aeroscue_models$ python3 benchmarkf.py
+\Loading yolov8_flood.engine for TensorRT inference...
+[09/22/2026-15:47:32] [TRT] [I] Loaded engine size: 7 MiB
+[09/22/2026-15:47:32] [TRT] [W] Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
+[09/22/2026-15:47:32] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +6, now: CPU 0, GPU 6 (MiB)
+[09/22/2026-15:47:32] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +9, now: CPU 0, GPU 15 (MiB)
+
+========== flood MODEL ==========
+PyTorch :  40.11 ms
+TensorRT:  28.44 ms
+PyTorch FPS :  24.93
+TensorRT FPS:  35.17
+TensorRT average: 28.4 ms
+PyTorch average: 40.1 ms
+Speedup: 1.41x
+=================================
+indseo01@jetson:~/aeroscue_models$ python3 benchmarkf.py
+Loading yolov8_flood.engine for TensorRT inference...
+[09/22/2026-15:48:10] [TRT] [I] Loaded engine size: 7 MiB
+[09/22/2026-15:48:10] [TRT] [W] Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
+[09/22/2026-15:48:10] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +6, now: CPU 0, GPU 6 (MiB)
+[09/22/2026-15:48:10] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +9, now: CPU 0, GPU 15 (MiB)
+
+========== flood MODEL ==========
+PyTorch :  40.23 ms
+TensorRT:  28.37 ms
+PyTorch FPS :  24.86
+TensorRT FPS:  35.25
+TensorRT average: 28.4 ms
+PyTorch average: 40.2 ms
+Speedup: 1.42x
+=================================
+indseo01@jetson:~/aeroscue_models$ python3 benchmarkf.py
+Loading yolov8_flood.engine for TensorRT inference...
+[09/22/2026-15:48:29] [TRT] [I] Loaded engine size: 7 MiB
+[09/22/2026-15:48:29] [TRT] [W] Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
+[09/22/2026-15:48:29] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +6, now: CPU 0, GPU 6 (MiB)
+[09/22/2026-15:48:29] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +9, now: CPU 0, GPU 15 (MiB)
+
+========== flood MODEL ==========
+PyTorch :  40.34 ms
+TensorRT:  27.10 ms
+PyTorch FPS :  24.79
+TensorRT FPS:  36.90
+TensorRT average: 27.1 ms
+PyTorch average: 40.3 ms
+Speedup: 1.49x
+
